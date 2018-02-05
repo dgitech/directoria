@@ -698,6 +698,7 @@ span.dashicons.dashicons-format-image{
 	box-shadow: 0 2px 0 0 rgba(0,0,0,0.1);
 	margin-bottom: 20px;
 	display: inline-block;
+	width:100%;
 }
 .warning{
 	background: rgba(255, 0, 0, 0.2);
@@ -857,7 +858,7 @@ span.dashicons.dashicons-format-image{
 }
 .article_content ul li .info_title {
 	display: inline-block;
-	width: 83px;
+	/*width: 83px;*/
 	font-weight: 400;
 	margin: 0;
 	font-family: 'Roboto',sans-serif;
@@ -1453,7 +1454,8 @@ textarea.directory_field{
 .client_reviews {
 	background: #fff;
 }
-.related_listing_title p {
+.related_listing_title p,
+.atbdp_reviews_title p{
 	font-size: 24px;
 	color: #00bcd4;
 	font-weight: 300;
@@ -1483,7 +1485,9 @@ textarea.directory_field{
 
 /* sidebar css */
 .directory_user_area_form > .directory_btn{
+    /*
 	line-height: 45px;
+    */
 	border: 2px solid #00bcd4;
 }
 
