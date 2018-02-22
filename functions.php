@@ -147,7 +147,7 @@ function directoria_widgets_init(){
  * Enqueue scripts and styles.
  */
 function directoria_scripts() {
-
+    /*@todo; Dequeue the bootstrap style from the plugin because we have bootstrap here.*/
 	wp_enqueue_style('directoria-bootstrap-style', get_template_directory_uri().'/css/bootstrap.min.css');
 	wp_enqueue_style('directoria-css-stars', get_template_directory_uri().'/css/css-stars.css');
 	wp_enqueue_style('directoria-font-awesome', get_template_directory_uri().'/css/font-awesome.min.css');
