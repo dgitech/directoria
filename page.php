@@ -30,7 +30,7 @@ get_header(); ?>
 
                         endwhile; // End of the loop.
                         ?>
-                    </div> <!-- #post-<?php echo $post->ID;; ?> -->
+                    </div> <!-- #post-<?php echo $post->ID; ?> -->
 
                 </div><!-- col-md-8-->
 
