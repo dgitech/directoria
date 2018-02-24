@@ -18,7 +18,7 @@ $tags = get_the_terms(get_the_ID(), ATBDP_TAGS);
 
                     <div class="directory_listing_info">
                         <div class="listing_title">
-                            <?php the_title('<h2>', '</h2>') ?>
+                            <?php the_title('<h2>', '</h2>'); ?>
 
                             <p class="sub_title"><?= (!empty($tagline)) ? esc_html($tagline) : ''; ?></p>
                         </div>
