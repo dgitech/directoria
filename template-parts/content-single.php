@@ -17,15 +17,15 @@
                 the_post_thumbnail('blog_thumbnail');
             }
             ?>
-        </div>
+        </div><!--ends blog_img-->
 
         <div class="blog_content_wrapper">
             <div class="blog_title">
                 <?php the_title('<h3>', '</h3>'); ?>
                 <div class="blog_meta">
                     <?php directoria_posted_on(); ?>
-                </div>
-            </div>
+                </div> <!--ends blog meta-->
+            </div> <!--ends blog_title-->
 
             <!-- start blog_contents -->
             <div class="blog_contents">
@@ -33,13 +33,13 @@
                wp_link_pages();
                ?>
             </div><!-- end blog contents -->
-        </div><!-- end blo_content_area -->
-    </div>
+        </div><!-- end blog_content_wrapper -->
+    </div> <!--ends post_area-->
     <!-- start author_info -->
     <div class="author_info">
         <div class="admin_img">
             <?php echo get_avatar( get_the_author_meta('email')  , 114 ); ?>
-        </div>
+        </div> <!--ends admin_img-->
 
         <div class="admin_info">
             <h4><?php the_author(); ?></h4>
@@ -68,7 +68,6 @@
                     } ?>
                 </ul>
             <?php } ?>
-        </div>
-    </div>
-    <!-- end author_info -->
+        </div> <!-- ends admin_info-->
+    </div>    <!-- end author_info -->
 
