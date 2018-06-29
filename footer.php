@@ -8,7 +8,7 @@
  *
  * @package Directoria
  */
-
+$credit = get_theme_mod('directoria_footer_credit')
 ?>
 <!-- start footer area -->
 <footer class="footer">
@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- start copyright text -->
-                <p>Copyright &copy; by BusinessDirectory 2017. All right reserved.</p>
+                <p><?php echo wp_kses_post($credit); ?></p>
                 <!-- end copyright text -->
             </div>
         </div>

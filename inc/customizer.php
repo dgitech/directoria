@@ -36,7 +36,6 @@ function directoria_customize_register( $wp_customize ) {
             'label' => __('Display Site Title and Tagline', 'directoria'),
             'section' => 'title_tagline',
             'settings' => 'show_title_tagline',
-
         )
 
     );
@@ -183,7 +182,32 @@ function directoria_customize_register( $wp_customize ) {
                 'placeholder' => __('Eg. johndoe@website.com', 'directoria'),
             ),
         )
+    );
 
+
+    /*Footer Credit SECTION*/
+    $wp_customize->add_section('directoria_footer_credit_sec',array(
+        'title' => __('Footer Settings', 'directoria'),
+        'priority' => '70',
+        'description' => __('You can customize content of your footer eg. footer credit etc here', 'directoria'),
+        'panel'         => 'directoria_theme_option',
+    ));
+    //Footer Credit Settings
+    $wp_customize->add_setting( 'directoria_footer_credit', array(
+        'default' => sprintf(__('&copy; %s All rights reserved', 'directoria'), date('Y')),
+        'sanitize_callback' => 'wp_kses_post' //cleans URL from all invalid characters
+    ));
+    //Footer Credit control or text field
+    $wp_customize->add_control('directoria_footer_credit', array(
+            'type' => 'text',
+            'label' => __('Footer Credit', 'directoria'),
+            'section' => 'directoria_footer_credit_sec',
+            'settings' => 'directoria_footer_credit',
+            'description' => sprintf(__('Enter credit text for your footer. Eg. &copy; %s All rights reserved. etc', 'directoria'), date('Y')),
+            'input_attrs'     => array(
+                'placeholder' => sprintf(__('Eg. &copy; %s All rights reserved', 'directoria'), date('Y')),
+            ),
+        )
     );
 
 
