@@ -4,8 +4,8 @@ Contributors: aazztech
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.0
-Tested up to: 4.8
-Stable tag: 1.0.0
+Tested up to: 4.9.6
+Stable tag: 1.4.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -29,7 +29,11 @@ Directoria includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.4 - June 29 2018 =
+* Added option to change footer credit
+* Made it compatible to the Directorist Version 3.1.5+
+
+= 1.0 - May 12 2017 =
 * Initial release
 
 == Credits ==
