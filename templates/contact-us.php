@@ -22,49 +22,33 @@ $email = get_theme_mod('directoria_email', '');
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="address_contact">
-                                <?php if (!empty($address)) { ?>
-                                    <div class="col-md-4">
-                                        <div class="contact_tile">
-                                            <span class="fa fa-map-marker icon"></span>
-                                            <h4 class="tiles__title"><?php echo esc_html__('Office Address','directoria')?></h4>
-                                            <div class="tiles__content">
-                                                <p><?php echo esc_html($address); ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php }
-                                if (!empty($phone)) { ?>
-                                    <div class="col-md-4">
-                                        <div class="contact_tile">
-                                            <span class="fa fa-phone icon"></span>
-                                            <h4 class="tiles__title"><?php echo esc_html__('Phone Number','directoria')?></h4>
-                                            <div class="tiles__content">
-                                                <p><?php echo esc_html($phone); ?></p>
-                                            </div>
-                                        </div>
-                                        <!-- end /.contact_tile -->
-                                    </div>
-                                <?php }
-                                if (!empty($email)) { ?>
-                                <div class="col-md-4">
-                                    <div class="contact_tile">
-                                        <span class="fa fa-envelope icon"></span>
-                                        <h4 class="tiles__title"><?php echo esc_html__('Email Address','directoria')?></h4>
-                                        <div class="tiles__content">
-                                            <p><?php echo esc_html($email); ?></p>
-                                        </div>
-                                    </div>
-                                    <!-- end /.contact_tile -->
-                                </div>
-                                <?php }?>
-                        </div>
-                    </div>
-                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 v_middle">
+                            <div class="contact_information">
+                                <ul>
+                                    <?php if (!empty($address)) { ?>
+                                    <li>
+                                        <span class="fa fa-map-marker"></span>
+                                        <p><?php echo esc_html($address); ?></p>
+                                    </li>
+                                    <?php }
+
+                                    if (!empty($phone)) { ?>
+                                    <li>
+                                        <span class="fa fa-phone"></span>
+                                        <p><?php echo esc_html($phone); ?></p>
+                                    </li>
+                                    <?php }
+
+                                    if (!empty($email)) { ?>
+                                    <li>
+                                        <span class="fa fa-envelope"></span>
+                                        <p><?php echo esc_html($email); ?></p>
+                                    </li>
+                                    <?php } ?>
+                                </ul>
+                            </div>
+
                             <div class="contact_form_wrapper directory_form_elem">
-                                <div class="contact_form__title">
-                                    <h3><?php echo esc_html__('Leave Your Messages','directoria')?></h3>
-                                </div>
                                 <?php
                                 while (have_posts()){
                                     the_post();
@@ -72,6 +56,7 @@ $email = get_theme_mod('directoria_email', '');
                                 }
                                 ?>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>

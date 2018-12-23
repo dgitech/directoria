@@ -4,7 +4,7 @@ Theme URI: https://aazztech.com/demos/themes/wp/directoria/
 Author: AazzTech
 Author URI: https://aazztech.com
 Description: A minimal and beautiful theme that is designed and developed to provide fastest page loading speed and make Business Directory plugin by AazzTech look awesome.
-Version: 1.4.1
+Version: 1.4.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: directoria
@@ -276,7 +276,7 @@ object {
 .site-title:hover{
 	color: #fff;
 }
-.menu_area.colored .site-title, 
+.menu_area.colored .site-title,
 .menu_area.colored .site-description{
 	color: #fff;
 	font-family: 'Roboto',sans-serif;
@@ -318,11 +318,6 @@ a:focus{
 p,
 a{
 	color: #676767;
-}
-p{
-	font-size: 16px;
-	line-height: 28px;
-	margin-bottom: 15px;
 }
 .single_direcotry_post p{
 	font-size: 14px;
@@ -387,10 +382,7 @@ select{
 	outline: none;
 	width: 100%;
 	border: 1px solid #dddd;
-	padding: 0 30px;
-}
-.postform{
-	padding: 0 30px !important;
+	padding: 0 20px;
 }
 input[type=checkbox]+label{
 	margin-left: 10px;
@@ -412,13 +404,6 @@ input[type=checkbox]+label{
 select{
 	height: 35px;
 	border: 1px solid #e7e7e7;
-	color: #676767;
-}
-.widget_rss ul {
-	color: #676767;
-}
-.postform option {
-	display: block !important;
 }
 .directorist select,
 .directorist select.form-control{
@@ -1305,7 +1290,7 @@ body.single_directory{
 }
 .directory_breadcrumb ol li a,
 .directory_breadcrumb ol li p{
-	color: #fff;
+	color: #989898;
 	transition: 0.3s;
 	font-family: 'Roboto',sans-serif;
 }
@@ -1333,9 +1318,10 @@ body.single_directory{
 }
 ul.directory_tags > li {
 	margin-bottom: 5px;
-	display: inline-block;
-	margin-right: 5px;
 }
+/*.about_detail{*/
+/*padding-top: 39px;*/
+/*}*/
 .director_social_wrap p{
 	display: inline-block;
 	margin: 0;
@@ -2373,7 +2359,7 @@ a.directory_read_more:hover{
 	border-color: #00bcd4;
 }
 .directory_blogpost figure figcaption {
-	padding: 25px 30px;
+	padding: 30px 0;
 }
 .directory_blogpost figure figcaption p {
 	line-height: 26px;
@@ -3197,14 +3183,6 @@ span.rate_active:before {
 	font-size: 24px;
 }
 .related_listing_title, .atbdp_reviews_title{margin: 0 30px;border-bottom: 1px solid #e1e1e1;padding: 20px 0;}
-
-
-/*Extra css Goes here*/
-
-
-/*======================
-Widget	Calender
-=====================*/
 
 caption {
 	padding-top: 8px;

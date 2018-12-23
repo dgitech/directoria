@@ -92,7 +92,7 @@ function directoria_adv_breadcrumbs() {
             $s = ('at_biz_dir'== $at_biz_dir) ? 'All' : '';
 
         }
-        echo "<h2>". sprintf( __( 'Search Results for: "%s"', 'directoria' ), $s ) ."</h2>";
+        echo "<h2>". sprintf( __( 'Search Results for: %s', 'directoria' ), $s ) ."</h2>";
     }elseif (is_page()){
         the_title('<h2>','</h2>');
     }
