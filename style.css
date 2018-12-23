@@ -302,8 +302,8 @@ object {
 .single_radio input[type='radio']:checked + label span,
 .directorist select:focus,.director_social_wrap ul li a,
 .read_more_area .read_more,a.directory_read_more:hover,
-blockquote,
-.directory_image_galler_wrap span:hover,
+blockquote,.widget.tags li a:hover,a.directory_category:hover,
+.directory_image_galler_wrap span:hover,.directorist .add_listing_form_wrapper .select2-container--focus .select2-selection,
 .directorist select.form-control:focus{
     border-color: #00bcd4!important;
 }
@@ -320,8 +320,10 @@ blockquote,
 .directorist .navigation.pagination .nav-links  a:hover,.db_btn_area button.directory_edit_btn,
 .directorist .navigation.pagination .nav-links  .current,.expandable_fields button,
 .directory_main_content_area .submit_btn button,#close:checked + label span.cs,
+.directorist .single_directory_post figcaption,a.directory_category:hover,
+.directorist .dashboard_wrapper .nav-tabs>li>a:before,
 .reviewer i, .directory_user_area_form #loginform p.login-submit  input[type='submit'],
-.reviewer_avatar span, .listing_submit_btn{
+.reviewer_avatar span, .listing_submit_btn, .td#today{
     background: #00bcd4;
 }
 
@@ -336,11 +338,13 @@ blockquote,
 .profile_title h4,.directory_blogpost  .blogpost_title:hover h2,
 a.directory_read_more:hover,.blog_meta .author, .widget ul li a:hover,
 .director_social_wrap ul li a,.directory_are_title h4,
+.widget  > ul > li a:hover,.contact_information ul li span,
 .latest_rev_info a,.days_time > span,.directory_drag_drop p span,
 .directorist .directory_home_category_area ul.categories li span,
 .directory_home_category_area > span,.related_listing_title p,
 .atbdp_reviews_title p,.cate_title h4,.widget_content a:hover,
-.reviewer p, .tagcloud a:hover{
+.reviewer p, .tagcloud a:hover,a:hover,.contact_tile .icon,
+.dropdown ul li a:hover,.directorist .article_content ul li .infos .tags li a{
     color: #00bcd4;
 }
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,500,700');
@@ -1042,7 +1046,6 @@ span.dashicons.dashicons-format-image{
 .directorist .navigation.pagination .nav-links .current{
 	padding: 0;
 	line-height: 38px;
-	background: transparent;
 	width: 40px;
 	display: inline-block;
 	border: 1px solid #ddd;
@@ -2050,7 +2053,6 @@ select.directory_field{
 	content: '';
 	height: 4px;
 	width: 100%;
-	background: #01bcd4;
 	left: 0;
 	top: 0;
 	opacity: 1;
@@ -2745,9 +2747,6 @@ form.search-form input[type='search'], .mc4wp-form-fields input[type='email']{
 .widget > ul{
 	padding: 30px
 }
-.widget  > ul > li a:hover{
-	color: #00bcd4;
-}
 .widget .latest_reviews ul li span.fa{
 	color: #fff;
 	font-size: 24px;
@@ -2771,9 +2770,6 @@ form.search-form input[type='search'], .mc4wp-form-fields input[type='email']{
 	font-size: 14px;
 	color: #676767;
 	text-transform: capitalize;
-}
-.widget.tags li a:hover{
-	border-color: #00bcd4;
 }
 .single_blog_wrapper figure img{
 	width: 100%;
@@ -2836,7 +2832,6 @@ form.search-form input[type='search'], .mc4wp-form-fields input[type='email']{
 }
 .contact_information ul li span{
 	font-size: 20px;
-	color: #00bcd4;
 }
 .contact_information ul li p{
 	width: calc(100% - 35px);
@@ -2943,9 +2938,6 @@ img {
     visibility: visible;
 
 }
-.dropdown ul li a:hover{
-	color: #00bcd4;
-}
 .dropdown ul{
 	border-top: none;
 }
@@ -2968,14 +2960,10 @@ img {
 	margin-bottom:0;
 }
 .directorist .article_content ul li .infos .tags li a{
-	color: #00bcd4;
 	display: inline-block;
 }
 .directorist .article_content ul li .infos .tags li a::after{
 	content: ',';
-}
-.directorist .single_directory_post figcaption{
-	background: #00bcd4;
 }
 .directorist .article_content .content_upper .post_title a{
 	font-size: 20px;
@@ -3022,17 +3010,11 @@ a.directory_category {
 	text-transform: capitalize;
 	transition: 0.3s;
 }
-a.directory_category:hover{
-	color: #00bcd4;
-	border-color: #00bcd4;
-}
+
 .directorist .add_listing_form_wrapper .select2-selection{
 	background: #f5f5f5;
 	border-color: #e7e7e7;
 	border-radius: 2px;
-}
-.directorist .add_listing_form_wrapper .select2-container--focus .select2-selection{
-	border-color: #00bcd4;
 }
 .directorist .select2-container--default .select2-selection--single, .directorist .select2-container--default.select2-container--focus .select2-selection--single{
 	border: none!important;
@@ -3121,7 +3103,6 @@ td {
 	padding-top: 0;
 }
 td#today {
-	background: #00bcd4;
 	color: #fff;
 	padding: 8px;
 	text-align: center;
@@ -3187,9 +3168,6 @@ blockquote p{
 	font-size: 16px;
 	color: #676767;
 }
-a:hover{
-	color: #00bcd4;
-}
 .active .bread-current{
 	color: #fff;
 	font-weight: 400;
@@ -3213,7 +3191,6 @@ a:hover{
 
 .contact_tile .icon {
 	font-size: 36px;
-	color: #00bcd4;
 	width: 80px;
 	height: 80px;
 	-webkit-border-radius: 50%;
@@ -3273,6 +3250,10 @@ a:hover{
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .directory_home_category_area .categories li a p,
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .directory_home_category_area > p{
     color: #d8dee4;
+}
+.atbd_content_active .directoria_home_area_wrapper #directorist+#directorist{
+    padding-top: 120px;
+    padding-bottom: 110px;
 }
 #directorist.atbd_wrapper .atbd_success_mesage p{
     margin: 20px;
