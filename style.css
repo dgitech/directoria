@@ -294,6 +294,55 @@ object {
 /*****************************
     GENERAL STYLE
 *****************************/
+
+/*--------------------------------------------------------------
+## color centralized
+--------------------------------------------------------------*/
+.directorist .directory_field:focus,
+.single_radio input[type='radio']:checked + label span,
+.directorist select:focus,.director_social_wrap ul li a,
+.read_more_area .read_more,a.directory_read_more:hover,
+blockquote,
+.directory_image_galler_wrap span:hover,
+.directorist select.form-control:focus{
+    border-color: #00bcd4!important;
+}
+
+/* bg */
+.menu_area.colored,
+.directory_custom_suggestion ul li:hover,
+.read_more_area .read_more:hover,.directory_are_title h4 span,
+.navigation.pagination .nav-links  a:hover,.search-submit,
+.header_form_wrapper .directory_btn,.single_checkbox label.selected,
+.single_radio label span:before,.single_checkbox label.active,
+.choose_btn input[type='file'] + label,.directory_regi_btn input[type='submit'],
+.navigation.pagination .nav-links  .current,.day_selection_btn button,
+.directorist .navigation.pagination .nav-links  a:hover,.db_btn_area button.directory_edit_btn,
+.directorist .navigation.pagination .nav-links  .current,.expandable_fields button,
+.directory_main_content_area .submit_btn button,#close:checked + label span.cs,
+.reviewer i, .directory_user_area_form #loginform p.login-submit  input[type='submit'],
+.reviewer_avatar span, .listing_submit_btn{
+    background: #00bcd4;
+}
+
+/* color */
+.listing_title h2,.directory_breadcrumb ol li a:hover,
+.directory_main_content_area .single_search_field span:hover,
+.single_direcotry_post .content_upper .post_title a,
+.directory_review_info .rating_num,.widget_title h4,
+.read_more_area .read_more,.directory_breadcrumb span,
+.admin_info ul li a:hover,.comment-reply-link,
+.directory_image_galler_wrap span:hover,.rating_label,
+.profile_title h4,.directory_blogpost  .blogpost_title:hover h2,
+a.directory_read_more:hover,.blog_meta .author, .widget ul li a:hover,
+.director_social_wrap ul li a,.directory_are_title h4,
+.latest_rev_info a,.days_time > span,.directory_drag_drop p span,
+.directorist .directory_home_category_area ul.categories li span,
+.directory_home_category_area > span,.related_listing_title p,
+.atbdp_reviews_title p,.cate_title h4,.widget_content a:hover,
+.reviewer p, .tagcloud a:hover{
+    color: #00bcd4;
+}
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 /* RESET CSS */
 body{
@@ -399,7 +448,6 @@ input[type=checkbox]+label{
 .directorist select:focus,
 .directorist select.form-control:focus{
 	box-shadow: 0 0 0;
-	border-color: #00bcd4;
 }
 select{
 	height: 35px;
@@ -564,10 +612,6 @@ span.dashicons.dashicons-format-image{
 	color: #fff;
 	background: none;
 }
-
-.menu_area.colored{
-	background: #00bcd4;
-}
 .menu_area.colored .navbar-default{
 	background-color: transparent;
 	border: 0;
@@ -633,9 +677,6 @@ span.dashicons.dashicons-format-image{
 .directory_main_content_area .single_search_field{
 	float: left;
 	position: relative;
-}
-.directory_main_content_area .single_search_field span:hover {
-	color: #00bcd4;
 }
 .directorist .single_search_field .select2-container--default .select2-selection--single{
 	height: 60px;
@@ -708,7 +749,6 @@ span.dashicons.dashicons-format-image{
 	border: 0;
 	font-size: 18px;
 	width: 100%;
-	background: #00bcd4;
 	color: #ffffff;
 	box-shadow: 0 0 0;
 	border-radius: 0 3px 3px 0;
@@ -726,7 +766,6 @@ span.dashicons.dashicons-format-image{
 	text-transform: capitalize;
 }
 .directorist .directory_home_category_area ul.categories li span{
-	color: #00bcd4;
 	font-size: 24px;
 }
 .directory_home_category_area {
@@ -756,7 +795,6 @@ span.dashicons.dashicons-format-image{
 	font-family: 'Roboto', sans-serif;
 	line-height: 32px;
 	font-weight: 400;
-	color: #00bcd4;
 }
 .directory_custom_suggestion {
 	background: #fff;
@@ -773,9 +811,6 @@ span.dashicons.dashicons-format-image{
 	-o-transition: 0.2s;
 	transition: 0.2s;
 }
-.directory_custom_suggestion ul li:hover{
-	background: #00bcd4;
-}
 .directory_custom_suggestion ul li:hover span.fa,
 .directory_custom_suggestion ul li:hover span.sug{
 	color: #fff;
@@ -790,54 +825,6 @@ span.dashicons.dashicons-format-image{
 	font-size: 18px;
 	margin-right: 10px;
 }
-
-/* notice */
-.notice,
-.warning,
-.success{
-	padding: 20px;
-	border-radius: 4px;
-	font-size: 16px;
-	box-shadow: 0 2px 0 0 rgba(0,0,0,0.1);
-	margin-bottom: 20px;
-	display: inline-block;
-	width:100%;
-}
-.warning{
-	background: rgba(255, 0, 0, 0.2);
-	display: inline-block;
-}
-.notice{
-	background: rgba(0,188,212,0.2);
-}
-.success {
-	background: rgba(60, 255, 120, 0.2);
-}
-.notice span,
-.warning span,
-.success span{
-	line-height: 25px;
-	width: 25px;
-	text-align: center;
-	border-radius: 27px;
-	margin-right: 5px;
-}
-.warning span {
-	background: #fb3f3f;
-	color: #fff;
-}
-.notice span{
-	background: #fbbd0e;
-	color: #fff;
-}
-.success span {
-	color: #fff;
-	background: #55da8a;
-}
-.notice a {
-	color: #00bcd4;
-}
-
 /* star css */
 .br-theme-css-stars-static{
 	display: inline-block;
@@ -936,7 +923,6 @@ span.dashicons.dashicons-format-image{
 .single_direcotry_post .content_upper .post_title a{
 	font-size: 20px;
 	font-family: 'Roboto',sans-serif;
-	color: #00bcd4;
 	font-weight: 600;
 	line-height: 26px;
 }
@@ -961,7 +947,6 @@ span.dashicons.dashicons-format-image{
 	margin-left: 6px;
 }
 .directory_review_info .rating_num{
-	color: #00bcd4;
 	font-family: 'Roboto',sans-serif;
 }
 .article_content {
@@ -1012,7 +997,6 @@ span.dashicons.dashicons-format-image{
 	background: #fff;
 	transition: 0.3s;
 	border: 2px solid #00bcd4;
-	color: #00bcd4;
 	font-family: 'Roboto',sans-serif;
 }
 .read_more_area{
@@ -1021,7 +1005,6 @@ span.dashicons.dashicons-format-image{
 .read_more_area .read_more:hover {
 	color: #fff;
 	box-shadow:0 2px 6px rgba(0,0,0,0.15);
-	background: #00bcd4;
 }
 .general_info {
 	border-top: 1px solid #e6e6e6;
@@ -1081,7 +1064,6 @@ span.dashicons.dashicons-format-image{
 .navigation.pagination .nav-links  .current,
 .directorist .navigation.pagination .nav-links  a:hover,
 .directorist .navigation.pagination .nav-links  .current{
-	background: #00bcd4;
 	color: #fff;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -1164,7 +1146,6 @@ span.dashicons.dashicons-format-image{
 }
 .header_form_wrapper .directory_btn{
 	line-height: 42px;
-	background: #00bcd4;
 	color: #fff;
 	border: none;
 	margin-left: 10px;
@@ -1216,10 +1197,7 @@ body.single_directory{
 	width: 30px;
 	cursor: pointer;
 }
-.directory_image_galler_wrap span:hover{
-	color: #00bcd4;
-	border-color: #00bcd4;
-}
+
 .directory_image_galler_wrap span.prev{
 	left: 15px;
 }
@@ -1239,7 +1217,6 @@ body.single_directory{
 	color: #fff;
 }
 .listing_title h2{
-	color: #00bcd4;
 	line-height: 30px;
 	font-size: 36px;
 	font-family: 'Roboto',sans-serif;
@@ -1294,18 +1271,12 @@ body.single_directory{
 	transition: 0.3s;
 	font-family: 'Roboto',sans-serif;
 }
-.directory_breadcrumb ol li a:hover{
-	color: #00bcd4;
-}
 /*.directory_breadcrumb ol li a:after {
 	content: '/';
 	color: #989898;
 	margin-left: 8px;
 	margin-right: 4px;
 }*/
-.directory_breadcrumb span{
-	color: #00bcd4;
-}
 .breadcrumb{
 	background-color: transparent;
 }
@@ -1337,7 +1308,6 @@ ul.directory_tags > li {
 .director_social_wrap ul li a{
 	display: block;
 	border: 1px solid #00bcd4;
-	color: #00bcd4;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
@@ -1366,12 +1336,10 @@ ul.directory_tags > li {
 	background: #fff;
 }
 .directory_are_title h4 {
-	color: #00bcd4;
 	font-family: 'Roboto',sans-serif;
 	font-weight: 300;
 }
 .directory_are_title h4 span {
-	background: #00bcd4;
 	display: inline-block;
 	line-height: 42px;
 	width: 43px;
@@ -1404,9 +1372,6 @@ ul.directory_tags > li {
 	border-bottom: 1px solid #e1e1e1;
 	padding: 25px 30px;
 	margin-bottom: 0;
-}
-.widget_title h4{
-	color: #00bcd4;
 }
 
 .directory_contact_area ul li .info_title {
@@ -1457,7 +1422,6 @@ textarea.directory_field{
 }
 .rating_label {
 	font-size: 14px;
-	color: #00bcd4;
 	margin: 0;
 	font-family: 'Roboto',sans-serif;
 	display: inline-block;
@@ -1505,7 +1469,6 @@ textarea.directory_field{
 	-moz-border-radius: 50%;
 	margin-right: 10px;
 	border-radius: 50%;
-	background: #00bcd4;
 }
 .review_top {
 	border-bottom: 1px solid #e1e1e1;
@@ -1528,7 +1491,6 @@ textarea.directory_field{
 }
 .reviewer p{
 	font-size: 16px;
-	color: #00bcd4;
 	font-weight: 300;
 }
 .review_time {
@@ -1556,7 +1518,6 @@ textarea.directory_field{
 .related_listing_title p,
 .atbdp_reviews_title p{
 	font-size: 24px;
-	color: #00bcd4;
 	font-weight: 300;
 	background-color: transparent;
 	position: relative;
@@ -1609,7 +1570,6 @@ textarea.directory_field{
 	margin-bottom: 0;
 }
 .directory_user_area_form #loginform p.login-submit  input[type='submit']{
-	background: #00bcd4;
 	color: #fff;
 	border-radius: 4px;
 }
@@ -1647,7 +1607,6 @@ textarea.directory_field{
 	display: block;
 }
 .cate_title h4 {
-	color: #00bcd4;
 	font-weight: 300;
 	font-family: 'Roboto',sans-serif;
 }
@@ -1660,9 +1619,6 @@ textarea.directory_field{
 }
 .right_content .cate_title{
 	margin-bottom: 10px;
-}
-.listings > li+li{
-	margin-top: 40px;
 }
 /*.categorized_listings{
 	padding: 30px;
@@ -1707,7 +1663,6 @@ textarea.directory_field{
 	font-size: 16px;
 	line-height: 26px;
 	font-family: "Roboto",sans-serif;
-	color: #00bcd4;
 }
 
 
@@ -1779,9 +1734,6 @@ textarea.directory_field{
 	opacity: 1;
 	visibility: visible;
 }
-.single_radio input[type='radio']:checked + label span{
-	border-color: #00bcd4;
-}
 
 .single_radio label span:before{
 	content: '';
@@ -1789,7 +1741,6 @@ textarea.directory_field{
 	visibility: hidden;
 	opacity: 0;
 	width: 6px;
-	background: #00bcd4;
 	top: 50%;
 	left: 50%;
 	position: absolute;
@@ -1849,11 +1800,9 @@ textarea.directory_field{
 	box-shadow: inset 0px 0px 22px rgba(0,188,212,0.15);
 }
 .single_checkbox label.active {
-	background: #00bcd4;
 	color: #fff;
 }
 .single_checkbox label.selected{
-	background: #00bcd4;
 	color: #fff;
 }
 .days_time input[type='text'] {
@@ -1877,7 +1826,6 @@ textarea.directory_field{
 	line-height: 35px;
 	padding: 0 23px;
 	border: 0;
-	background: #00bcd4;
 	color: #fff;
 	font-family: 'Roboto',sans-serif;
 	border-radius: 2px;
@@ -1892,7 +1840,6 @@ textarea.directory_field{
 	display: block;
 }
 .days_time > span {
-	color: #00bcd4;
 	text-transform: lowercase;
 	font-weight: 600;
 	margin-right: 15px;
@@ -1928,9 +1875,6 @@ textarea.directory_field{
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	visibility: hidden;
-}
-#close:checked + label span.cs{
-	background: #00bcd4;
 }
 #close:checked + label span.cs:before{
 	opacity: 1;
@@ -1969,7 +1913,6 @@ textarea.directory_field{
 .listing_submit_btn{
 	line-height: 50px;
 	width: 171px;
-	background: #00bcd4;
 	border: 0;
 	color: #fff;
 	-webkit-border-radius: 3px;
@@ -1988,7 +1931,6 @@ select.directory_field{
 }
 .expandable_fields button {
 	position: absolute;
-	background: #00bcd4;
 	font-size: 12px;
 	color: #fff;
 	line-height: 41px;
@@ -2031,9 +1973,6 @@ select.directory_field{
 	color: #c1c1c1;
 	display: block;
 }
-.directory_drag_drop p span{
-	color: #00bcd4;
-}
 .dz-preview {
 	display: inline-block;
 }
@@ -2069,9 +2008,6 @@ select.directory_field{
 	font-family: 'Roboto',sans-serif;
 	color: #fff;
 	display: inline-block;
-}
-.db_btn_area button.directory_edit_btn{
-	background: #00bcd4;
 }
 .db_btn_area button.directory_remove_btn{
 	background: #ff4030;
@@ -2160,7 +2096,6 @@ select.directory_field{
 	line-height: 38px;
 	padding: 0 37px;
 	display: inline-block;
-	background: #00bcd4;
 	color: #fff;
 	cursor: pointer;
 	margin-bottom: 0;
@@ -2320,13 +2255,9 @@ form .form-group label.not_empty{
 	border-radius: 3px;
 	color: #fff;
 	font-family: 'Roboto',sans-serif;
-	background: #00bcd4;
 }
 .profile_title h4{
 	padding-bottom:25px;
-}
-.profile_title h4{
-	color: #00bcd4;
 }
 /* direcotry blog page */
 .directory_blogpost figure img{
@@ -2342,9 +2273,6 @@ form .form-group label.not_empty{
 	transition: 0.3s;
 	font-weight: 500;
 }
-.directory_blogpost  .blogpost_title:hover h2{
-	color: #00bcd4;
-}
 a.directory_read_more {
 	font-weight: 400;
 	font-size: 16px;
@@ -2353,10 +2281,6 @@ a.directory_read_more {
 	display: inline-block;
 	margin-top: 10px;
 	letter-spacing: 0.3px;
-}
-a.directory_read_more:hover{
-	color: #00bcd4;
-	border-color: #00bcd4;
 }
 .directory_blogpost figure figcaption {
 	padding: 30px 0;
@@ -2405,11 +2329,8 @@ a.directory_read_more:hover{
 .blog_content_wrapper{
 	padding: 30px 30px 26px 30px;
 }
-.single_post{
-	background: #f6f6f6;
-}
-.blog_meta .author{
-	color: #00bcd4;
+.single_post {
+    background: #f6f6f6;
 }
 .blog_title span.post_date {
 	color: #7b7b7b;
@@ -2538,9 +2459,6 @@ blockquote:before {
 	padding: 0 8px;
 	transition: 0.5s;
 }
-.admin_info ul li a:hover{
-	color: #00bcd4;
-}
 .admin_info ul li:first-child a{
 	padding-left: 0;
 }
@@ -2597,7 +2515,6 @@ blockquote:before {
 	margin: 0;
 }
 .comment-reply-link {
-	color: #00bcd4;
 	font-size: 14px;
 	line-height: 28px;
 }
@@ -2726,7 +2643,6 @@ form.reply_form {
 	line-height: 52px;
 	border: none;
 	padding: 0 20px;
-	background: #00bcd4;
 	color: #fff;
 	margin-left: -3px;
 }
@@ -2738,10 +2654,6 @@ form.reply_form {
 	background: #fff;
 	margin-bottom: 30px;
 	box-shadow: 0px 2px 4px rgba(59,59,59,0.10);
-}
-
-.widget_content a:hover {
-	color: #00bcd4;
 }
 /*.widget_title {
 	color: #333;
@@ -2819,9 +2731,6 @@ form.search-form input[type='search'], .mc4wp-form-fields input[type='email']{
 	color: #676767;
 	border: 1px solid #ededed;
 }
-.tagcloud a:hover{
-	color: #00bcd4;
-}
 
 
 .widget ul li a{
@@ -2832,9 +2741,6 @@ form.search-form input[type='search'], .mc4wp-form-fields input[type='email']{
 	transition: 0.3s;
 	font-weight: 500;
 	text-transform: capitalize;
-}
-.widget ul li a:hover{
-	color: #00bcd4;
 }
 .widget > ul{
 	padding: 30px
@@ -3349,9 +3255,6 @@ a:hover{
 .mc4wp-form .mc4wp-form-fields label {
 	max-width: 69%;
 }
-.not_empty {
-	padding: 10px 0px;
-}
 .directorist .hide-if-no-js{
 	margin-top: -20px;
 }
@@ -3370,4 +3273,7 @@ a:hover{
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .directory_home_category_area .categories li a p,
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .directory_home_category_area > p{
     color: #d8dee4;
+}
+#directorist.atbd_wrapper .atbd_success_mesage p{
+    margin: 20px;
 }
