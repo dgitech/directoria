@@ -298,55 +298,6 @@ object {
 /*--------------------------------------------------------------
 ## color centralized
 --------------------------------------------------------------*/
-.directorist .directory_field:focus,
-.single_radio input[type='radio']:checked + label span,
-.directorist select:focus,.director_social_wrap ul li a,
-.read_more_area .read_more,a.directory_read_more:hover,
-blockquote,.widget.tags li a:hover,a.directory_category:hover,
-.directory_image_galler_wrap span:hover,.directorist .add_listing_form_wrapper .select2-container--focus .select2-selection,
-.directorist select.form-control:focus{
-    border-color: #00bcd4!important;
-}
-
-/* bg */
-.menu_area.colored,
-.directory_custom_suggestion ul li:hover,
-.read_more_area .read_more:hover,.directory_are_title h4 span,
-.navigation.pagination .nav-links  a:hover,.search-submit,
-.header_form_wrapper .directory_btn,.single_checkbox label.selected,
-.single_radio label span:before,.single_checkbox label.active,
-.choose_btn input[type='file'] + label,.directory_regi_btn input[type='submit'],
-.navigation.pagination .nav-links  .current,.day_selection_btn button,
-.directorist .navigation.pagination .nav-links  a:hover,.db_btn_area button.directory_edit_btn,
-.directorist .navigation.pagination .nav-links  .current,.expandable_fields button,
-.directory_main_content_area .submit_btn button,#close:checked + label span.cs,
-.directorist .single_directory_post figcaption,a.directory_category:hover,
-.directorist .dashboard_wrapper .nav-tabs>li>a:before,
-.reviewer i, .directory_user_area_form #loginform p.login-submit  input[type='submit'],
-.reviewer_avatar span, .listing_submit_btn, .td#today{
-    background: #00bcd4;
-}
-
-/* color */
-.listing_title h2,.directory_breadcrumb ol li a:hover,
-.directory_main_content_area .single_search_field span:hover,
-.single_direcotry_post .content_upper .post_title a,
-.directory_review_info .rating_num,.widget_title h4,
-.read_more_area .read_more,.directory_breadcrumb span,
-.admin_info ul li a:hover,.comment-reply-link,
-.directory_image_galler_wrap span:hover,.rating_label,
-.profile_title h4,.directory_blogpost  .blogpost_title:hover h2,
-a.directory_read_more:hover,.blog_meta .author, .widget ul li a:hover,
-.director_social_wrap ul li a,.directory_are_title h4,
-.widget  > ul > li a:hover,.contact_information ul li span,
-.latest_rev_info a,.days_time > span,.directory_drag_drop p span,
-.directorist .directory_home_category_area ul.categories li span,
-.directory_home_category_area > span,.related_listing_title p,
-.atbdp_reviews_title p,.cate_title h4,.widget_content a:hover,
-.reviewer p, .tagcloud a:hover,a:hover,.contact_tile .icon,
-.dropdown ul li a:hover,.directorist .article_content ul li .infos .tags li a{
-    color: #00bcd4;
-}
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 /* RESET CSS */
 body{
@@ -726,7 +677,7 @@ span.dashicons.dashicons-format-image{
 }
 .directory_main_content_area .single_search_field.search_query,
 .directory_custom_suggestion{
-/*	width: 60%;*/
+	/*	width: 60%;*/
 	position: relative;
 }
 .directory_main_content_area .single_search_field.search_query input{
@@ -1551,8 +1502,8 @@ textarea.directory_field{
 
 /* sidebar css */
 .directory_user_area_form > .directory_btn{
-    /*
-	line-height: 45px;
+	/*
+    line-height: 45px;
     */
 	border: 2px solid #00bcd4;
 }
@@ -2332,7 +2283,7 @@ a.directory_read_more {
 	padding: 30px 30px 26px 30px;
 }
 .single_post {
-    background: #f6f6f6;
+	background: #f6f6f6;
 }
 .blog_title span.post_date {
 	color: #7b7b7b;
@@ -2929,13 +2880,13 @@ img {
 	visibility: hidden;
 	opacity: 0;
 	transition: 0.3s;
-    display: block;
+	display: block;
 	top: calc(100% + 10px);
 }
 .menu-item-has-children:hover .dropdown-menu{
 	opacity:1;
 	top: 100%;
-    visibility: visible;
+	visibility: visible;
 
 }
 .dropdown ul{
@@ -2989,13 +2940,13 @@ img {
 	width:  auto;
 }
 .directorist .single_listing_info .directory_tags{
-    margin-top: 16px;
+	margin-top: 16px;
 }
 .related_listing_title:before, .atbdp_reviews_title:before{
-    display: none;
+	display: none;
 }
 .directorist .client_reviews{
-    margin-top: 30px;
+	margin-top: 30px;
 }
 .directory_tags ul li {
 	display: inline-block;
@@ -3243,18 +3194,18 @@ blockquote p{
 
 /*new theme compatibility css goes here*/
 .directoria_home_area_wrapper #directorist.atbd_wrapper .atbd_search_title_area .title{
-    color: #fff;
+	color: #fff;
 }
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .atbd_search_title_area p.sub_title,
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .directory_home_category_area > p,
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .directory_home_category_area .categories li a p,
 .atbd_content_active .directoria_home_area_wrapper #directorist.atbd_wrapper .directory_home_category_area > p{
-    color: #d8dee4;
+	color: #d8dee4;
 }
 .atbd_content_active .directoria_home_area_wrapper #directorist+#directorist{
-    padding-top: 120px;
-    padding-bottom: 110px;
+	padding-top: 120px;
+	padding-bottom: 110px;
 }
 #directorist.atbd_wrapper .atbd_success_mesage p{
-    margin: 20px;
+	margin: 20px;
 }

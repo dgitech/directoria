@@ -160,21 +160,6 @@ function directoria_scripts()
     wp_enqueue_style('directoria-style', get_stylesheet_uri());
     wp_enqueue_style('directoria-responsive', get_template_directory_uri() . '/css/responsive.css');
 
-
-    $theme_color = get_theme_mod('theme_color');
-    $theme_footer_color = get_theme_mod('footer_color');
-
-    $theme_color_tyle = <<<EDD
-        .menu_area.colored{
-            background: {$theme_color};
-        }
-        footer.footer{
-            background: {$theme_footer_color};
-        }
-EDD;
-
-    wp_add_inline_style('directoria-style', $theme_color_tyle);
-
     /*Directoria Scrips*/
     wp_enqueue_script('directoria-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0.0', true);
 
