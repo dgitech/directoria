@@ -211,7 +211,34 @@ function directoria_customize_register( $wp_customize ) {
     );
 
 
+    // Theme Color
+    $wp_customize->add_section('theme_colors',array(
+        'title' => __('Theme Color', 'directoria'),
+        'priority' => '70',
+        'panel'         => 'directoria_theme_option',
+    ));
 
+    $wp_customize->add_setting('theme_color',array(
+        'default'   => '#00bcd4'
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color', array(
+        'label' => __('Control Your Theme Color','bizillion'),
+        'section'   => 'theme_colors',
+        'settings'  => 'theme_color'
+    )));
+
+    // Footer background Color
+
+    $wp_customize->add_setting('footer_color',array(
+        'default'   => '#2f3131'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_color', array(
+        'label' => __('Footer Background Color','bizillion'),
+        'section'   => 'theme_colors',
+        'settings'  => 'footer_color'
+    )));
 
 }
 add_action( 'customize_register', 'directoria_customize_register' );
