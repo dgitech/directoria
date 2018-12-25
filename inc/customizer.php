@@ -302,7 +302,7 @@ function directoria_theme_color()
         .directorist select.form-control:focus, .directorist .directory_btn, .directorist .btn, .directory_btn, 
         .directorist .btn.btn-default, .directorist .btn.btn-primary, .directorist .directory_btn:hover, 
         .directorist .btn:hover, .directorist .btn.btn-default:hover{
-            border-color: {$theme_color}!important;
+            border-color: {$theme_color};
         }
         
         /* bg */
@@ -319,6 +319,7 @@ function directoria_theme_color()
         .directory_main_content_area .submit_btn button,#close:checked + label span.cs,
         .directorist .single_directory_post figcaption,a.directory_category:hover,
         .directorist .dashboard_wrapper .nav-tabs>li>a:before,
+        .directory_breadcrumb_area .directory_tags ul li a:hover,
         .reviewer i, .directory_user_area_form #loginform p.login-submit  input[type='submit'],
         .reviewer_avatar span, .listing_submit_btn, .td#today, .directorist .directory_btn:hover, 
         .directorist .btn:hover, .directorist .btn.btn-default:hover, .btn:hover{
