@@ -226,7 +226,7 @@ function directoria_customize_register($wp_customize)
     ));
 
     $wp_customize->add_setting('theme_color', array(
-        'default' => '#00bcd4'
+        'default' => '#122069'
     ));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color', array(
@@ -238,7 +238,7 @@ function directoria_customize_register($wp_customize)
     // Footer background Color
 
     $wp_customize->add_setting('footer_color', array(
-        'default' => '#2f3131'
+        'default' => '#23303a'
     ));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_color', array(
@@ -288,10 +288,8 @@ add_action('customize_preview_init', 'directoria_customize_preview_js');
 function directoria_theme_color()
 {
 
-    $theme_color = get_theme_mod('theme_color','#00bcd4');
-    $theme_footer_color = get_theme_mod('footer_color','#2f3131');
-    $primary_button = get_theme_mod('primary_button_color','#272b41');
-    $secendory_button = get_theme_mod('secendory_button_color','#122069');
+    $theme_color = get_theme_mod('theme_color','#122069');
+    $theme_footer_color = get_theme_mod('footer_color','#23303a');
 
     $theme_color_tyle = <<<EDD
                 
