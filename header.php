@@ -41,8 +41,8 @@
                         the_custom_logo();
                         get_template_part('template-parts/site-branding');
                         ?>
-
                     </div>
+
                      <?php
                     wp_nav_menu( array(
                             'menu'              => 'primary',
