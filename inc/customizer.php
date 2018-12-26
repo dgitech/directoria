@@ -217,6 +217,18 @@ function directoria_customize_register($wp_customize)
         'settings' => 'footer_text_color'
     )));
 
+    // Header background Color
+
+    $wp_customize->add_setting('header_color', array(
+        'default' => '#fff'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'header_color', array(
+        'label' => __('Header Background Color', 'bizillion'),
+        'section' => 'theme_colors',
+        'settings' => 'header_color'
+    )));
+
 
     // Theme Color
     $wp_customize->add_section('theme_colors', array(
@@ -226,7 +238,7 @@ function directoria_customize_register($wp_customize)
     ));
 
     $wp_customize->add_setting('theme_color', array(
-        'default' => '#00bcd4'
+        'default' => '#1b7ffc'
     ));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'color', array(
@@ -288,10 +300,9 @@ add_action('customize_preview_init', 'directoria_customize_preview_js');
 function directoria_theme_color()
 {
 
-    $theme_color = get_theme_mod('theme_color','#00bcd4');
-    $theme_footer_color = get_theme_mod('footer_color','#2f3131');
-    $primary_button = get_theme_mod('primary_button_color','#272b41');
-    $secendory_button = get_theme_mod('secendory_button_color','#122069');
+    $theme_color = get_theme_mod('theme_color', '#1b7ffc');
+    $header_color = get_theme_mod('header_color', '#fff');
+    $theme_footer_color = get_theme_mod('footer_color', '#2f3131');
 
     $theme_color_tyle = <<<EDD
                 
@@ -307,8 +318,11 @@ function directoria_theme_color()
             border-color: {$theme_color};
         }
         
+        .menu_area.colored{
+            background: {$header_color};
+        }
+        
         /* bg */
-        .menu_area.colored,
         .directory_custom_suggestion ul li:hover,
         .read_more_area .read_more:hover,.directory_are_title h4 span,
         .navigation.pagination .nav-links  a:hover,.search-submit,
@@ -329,7 +343,7 @@ function directoria_theme_color()
         }
         
         /* color */
-        .listing_title h2,.directory_breadcrumb ol li a:hover,
+        .directory_breadcrumb ol li a:hover,
         .directory_main_content_area .single_search_field span:hover,
         .single_direcotry_post .content_upper .post_title a,
         .directory_review_info .rating_num,.widget_title h4,
@@ -341,7 +355,6 @@ function directoria_theme_color()
         .director_social_wrap ul li a,.directory_are_title h4,
         .widget  > ul > li a:hover,.contact_information ul li span,
         .latest_rev_info a,.days_time > span,.directory_drag_drop p span,
-        .directorist .directory_home_category_area ul.categories li span,
         .directory_home_category_area > span,.related_listing_title p,
         .atbdp_reviews_title p,.cate_title h4,.widget_content a:hover,
         .reviewer p, .tagcloud a:hover,a:hover,.contact_tile .icon,
