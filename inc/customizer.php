@@ -250,7 +250,7 @@ function directoria_customize_register($wp_customize)
     // Footer background Color
 
     $wp_customize->add_setting('footer_color', array(
-        'default' => '#2f3131'
+        'default' => '#23303a'
     ));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_color', array(
@@ -305,23 +305,23 @@ function directoria_theme_color()
     $theme_footer_color = get_theme_mod('footer_color', '#2f3131');
 
     $theme_color_tyle = <<<EDD
-                
+
         .directorist .directory_field:focus,
         .single_radio input[type='radio']:checked + label span,
         .directorist select:focus,.director_social_wrap ul li a,
         .read_more_area .read_more,a.directory_read_more:hover,
         blockquote,.widget.tags li a:hover,a.directory_category:hover,
         .directory_image_galler_wrap span:hover,.directorist .add_listing_form_wrapper .select2-container--focus .select2-selection,
-        .directorist select.form-control:focus, .directorist .directory_btn, .directorist .btn, .directory_btn, 
-        .directorist .btn.btn-default, .directorist .btn.btn-primary, .directorist .directory_btn:hover, 
+        .directorist select.form-control:focus, .directorist .directory_btn, .directorist .btn, .directory_btn,
+        .directorist .btn.btn-default, .directorist .btn.btn-primary, .directorist .directory_btn:hover,
         .directorist .btn:hover, .directorist .btn.btn-default:hover{
             border-color: {$theme_color};
         }
-        
+
         .menu_area.colored{
             background: {$header_color};
         }
-        
+
         /* bg */
         .directory_custom_suggestion ul li:hover,
         .read_more_area .read_more:hover,.directory_are_title h4 span,
@@ -337,11 +337,11 @@ function directoria_theme_color()
         .directorist .dashboard_wrapper .nav-tabs>li>a:before,
         .directory_breadcrumb_area .directory_tags ul li a:hover,
         .reviewer i, .directory_user_area_form #loginform p.login-submit  input[type='submit'],
-        .reviewer_avatar span, .listing_submit_btn, .td#today, .directorist .directory_btn:hover, 
+        .reviewer_avatar span, .listing_submit_btn, .td#today, .directorist .directory_btn:hover,
         .directorist .btn:hover, .directorist .btn.btn-default:hover, .btn:hover{
             background: {$theme_color};
         }
-        
+
         /* color */
         .directory_breadcrumb ol li a:hover,
         .directory_main_content_area .single_search_field span:hover,
@@ -358,11 +358,11 @@ function directoria_theme_color()
         .directory_home_category_area > span,.related_listing_title p,
         .atbdp_reviews_title p,.cate_title h4,.widget_content a:hover,
         .reviewer p, .tagcloud a:hover,a:hover,.contact_tile .icon,
-        .dropdown ul li a:hover,.directorist .article_content ul li .infos .tags li a, .directorist .directory_btn, 
+        .dropdown ul li a:hover,.directorist .article_content ul li .infos .tags li a, .directorist .directory_btn,
         .directorist .btn, .directory_btn, .directorist .btn.btn-default, .directorist .btn.btn-primary{
             color: {$theme_color};
         }
-        
+
         footer.footer{
             background: {$theme_footer_color};
         }
