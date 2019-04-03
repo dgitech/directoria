@@ -3301,3 +3301,9 @@ blockquote p{
 .atbd_content_active #directorist.atbd_wrapper #atbdp-contact-form .form-group{
     margin-bottom: 18px;
 }
+.directoria_home_area_wrapper {
+    overflow-x: hidden;
+}
+.directoria_home_area_wrapper > p{
+    display: none;
+}
