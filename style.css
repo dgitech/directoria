@@ -3302,7 +3302,7 @@ blockquote p{
     margin-bottom: 18px;
 }
 .directoria_home_area_wrapper {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .directoria_home_area_wrapper > p{
     display: none;
