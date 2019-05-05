@@ -4,7 +4,7 @@ Theme URI: https://aazztech.com/demos/themes/wp/directoria/
 Author: AazzTech
 Author URI: https://aazztech.com
 Description: A minimal and beautiful theme that is designed and developed to provide fastest page loading speed and make Business Directory plugin by AazzTech look awesome.
-Version: 1.4.0
+Version: 2.1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: directoria
@@ -3306,4 +3306,34 @@ blockquote p{
 }
 .directoria_home_area_wrapper > p{
     display: none;
+}
+
+/* woocommerce checkout */
+.checkout.woocommerce-checkout input{
+    height: 40px;
+}
+.checkout.woocommerce-checkout input[type="radio"],
+.checkout.woocommerce-checkout input[type="checkbox"]{
+    height: auto;
+}
+.checkout.woocommerce-checkout textarea{
+    height: 100px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.checkout.woocommerce-checkout .select2-container--default .select2-selection--single{
+    height: 40px;
+    border-color: #ddd;
+}
+.checkout.woocommerce-checkout .wc_payment_methods .wc_payment_method{
+    list-style-type: none;
+}
+.woocommerce-checkout #payment ul.payment_methods li img{
+    padding-right: 15px;
+}
+.woocommerce-checkout #payment .payment_method_paypal .about_paypal{
+    font-style: italic;
+}
+.woocommerce-checkout #order_review_heading{
+    margin-top: 15px;
 }

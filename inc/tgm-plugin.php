@@ -40,24 +40,20 @@ function directoria_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
         array(
-            'name'               => 'Directorist',
-            'slug'               => 'directorist',
-            'required'           => false,
-            'version'            => '',
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => '',
+            'name'      => 'One click demo import',
+            'slug'      => 'one-click-demo-import',
+            'required'  => false,
         ),
         array(
-            'name'               => 'Contact Form 7',
-            'slug'               => 'contact-form-7',
-            'required'           => false,
-            'version'            => '',
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => '',
+            'name'      => 'Directorist – Business Directory Plugin',
+            'slug'      => 'directorist',
+            'required'  => true,
+        ),
+        array(
+            'name'      => 'Contact form - 7',
+            'slug'      => 'contact-form-7',
+            'required'  => false,
         ),
     );
    $config = array(

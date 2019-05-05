@@ -4,8 +4,13 @@ Contributors: aazztech
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.0
+<<<<<<< HEAD
 Tested up to: 4.9.6
 Stable tag: 2.0.1
+=======
+Tested up to: 5.2.0
+Stable tag: 2.1.0
+>>>>>>> 08cc33541529890adf9b659fac9c5136fc867a3f
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
