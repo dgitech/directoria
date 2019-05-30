@@ -311,7 +311,7 @@ if (defined('JETPACK__VERSION')) {
 //=========================================
 //  Config for demo data import
 //=================================
-function ocdi_import_files()
+function directoria_import_files()
 {
     return array(
         array(
@@ -323,7 +323,7 @@ function ocdi_import_files()
     );
 }
 
-add_filter('pt-ocdi/import_files', 'ocdi_import_files');
+add_filter('pt-ocdi/import_files', 'directoria_import_files');
 
 function directoria_after_import_setup()
 {
