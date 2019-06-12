@@ -38,9 +38,9 @@ $listing_breadcrumb_image = get_theme_mod('directoria_list_breadcrumb_bg', get_t
                         ?>
                         <div class="directory_tags">
                             <ul>
-                                <?php foreach ($tags as $tag){ ?>
+                                <?php foreach ($tags as $tag){?>
                                 <li>
-                                    <a href="<?php echo esc_url(ATBDP_Permalink::get_tag_archive($tag)); ?>" class="directory_tag">
+                                    <a href="<?php echo esc_url(ATBDP_Permalink::atbdp_get_tag_page($tag)); ?>" class="directory_tag">
                                         <?= esc_html( $tag->name); ?>
                                     </a>
                                 </li>
