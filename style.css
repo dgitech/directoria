@@ -551,7 +551,7 @@ span.dashicons.dashicons-format-image{
 	position: absolute;
 	top: 30px;
 	width: 100%;
-	z-index: 999;
+	z-index: 9999;
 }
 .home-page .menu_area .navbar-default{
 	border: 0;

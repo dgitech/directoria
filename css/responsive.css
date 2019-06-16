@@ -224,12 +224,13 @@
 
 /* SMALL DEVICES( mobile phones ) */
 @media (min-width: 480px) and (max-width: 767px) {
-
-    /* container width */
-    .container {
-        width: 450px;
+    .container{
+        max-width: inherit;
     }
 
+    .menu_area.colored{
+        background: #222;
+    }
     .directory_main_content_area .single_search_field.search_query {
         width: 55%;
     }
@@ -254,13 +255,12 @@
 
 /* XTRA SMALL DEVICES( mobile phones ) */
 @media (min-width: 300px) and (max-width: 479px) {
-    .container {
-        width: 300px;
-    }
-
     .directory_title h1 {
         font-size: 20px;
         line-height: 46px;
+    }
+    .menu_area.colored{
+        background: #222;
     }
 
     .directory_home_category_area ul.categories li {
@@ -369,5 +369,14 @@
     .no-pull-xs {
         float: none !important;
     }
+}
 
+@media (max-width: 400px){
+    .atbd_content_active #directorist.atbd_wrapper .atbd_listing_action_btn .dropdown{
+        width: 100%;
+    }
+    .atbd_content_active #directorist.atbd_wrapper .atbd_listing_action_btn .dropdown + .dropdown{
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
