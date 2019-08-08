@@ -1268,6 +1268,7 @@ body.single_directory{
 }*/
 .breadcrumb{
 	background-color: transparent;
+	padding-left: 0;
 }
 
 
