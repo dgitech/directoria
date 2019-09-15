@@ -83,7 +83,7 @@
 }
 
 /* CUSTOM RESPONSIVE CSS */
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
 
     /*header form wrapper*/
     .directory_search_field {
@@ -218,10 +218,62 @@
         margin-top: 16px;
     }
 
+    .woocommerce ul.products.columns-4 li.product,
+    .woocommerce ul.products.columns-5 li.product,
+    .woocommerce ul.products.columns-6 li.product {
+        width: 33.3333%;
+    }
+    .woocommerce .col2-set,
+    .woocommerce #order_review_heading,
+    .woocommerce #order_review {
+        float: none;
+        width: 100%;
+    }
+    .woocommerce .col2-set {
+        padding-right: 0;
+        margin: 0;
+    }
+    .woocommerce .col2-set .col-1,
+    .woocommerce .col2-set .col-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .woocommerce-account .woocommerce-MyAccount-navigation {
+        margin-bottom: 30px;
+    }
+    .woocommerce .woocommerce-order .woocommerce-thankyou-order-details {
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .woocommerce .woocommerce-order .woocommerce-thankyou-order-details li {
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .woocommerce table.shop_table td.actions .coupon .input-text {
+        width: 50%;
+    }
+    .woocommerce .cart_totals table.shop_table tr.order-total td {
+        padding-left: 15px;
+    }
+    .breadcrumb-wrapper .atbd_seach_fields_wrapper .atbdp-search-form .single_search_field {
+        -webkit-box-flex: 0;
+        -webkit-flex: none;
+        -ms-flex: none;
+        flex: none;
+    }
 
 }
-
-
+@media (max-width: 575px){
+    .woocommerce table.cart td.actions .coupon .input-text,
+    .woocommerce table.cart td.actions .coupon .button{
+        width: 100%;
+    }
+    .woocommerce table.cart td.actions .coupon .button{
+        margin-top: 10px;
+    }
+}
 /* SMALL DEVICES( mobile phones ) */
 @media (min-width: 480px) and (max-width: 767px) {
     .container{
@@ -250,7 +302,13 @@
     .directory_main_content_area .search_area>.title_area h2.title {
         font-size: 52px;
     }
-
+    .woocommerce ul.products.columns-2 li.product,
+    .woocommerce ul.products.columns-3 li.product,
+    .woocommerce ul.products.columns-4 li.product,
+    .woocommerce ul.products.columns-5 li.product,
+    .woocommerce ul.products.columns-6 li.product {
+        width: 50%;
+    }
 }
 
 /* XTRA SMALL DEVICES( mobile phones ) */
@@ -378,5 +436,23 @@
     .atbd_content_active #directorist.atbd_wrapper .atbd_listing_action_btn .dropdown + .dropdown{
         margin-left: 0;
         margin-top: 10px;
+    }
+    .woocommerce ul.products.columns-2 li.product,
+    .woocommerce ul.products.columns-3 li.product,
+    .woocommerce ul.products.columns-4 li.product,
+    .woocommerce ul.products.columns-5 li.product,
+    .woocommerce ul.products.columns-6 li.product {
+        width: 100%;
+    }
+    .cart_module .cart__items {
+        right: -15px;
+        min-width: 250px;
+    }
+    .woocommerce .woocommerce-billing-fields .form-row.form-row-first,
+    .woocommerce .woocommerce-billing-fields .form-row.form-row-last,
+    .woocommerce .woocommerce-shipping-fields .form-row.form-row-first,
+    .woocommerce .woocommerce-shipping-fields .form-row.form-row-last {
+        float: none;
+        width: 100%;
     }
 }
